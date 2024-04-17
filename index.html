@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mad Lib Form</title>
+  <script src="script.js"></script>
+</head>
+
+<footer>
+  <p>Last updated: <span id="lastModified"></span></p>
+</footer>
+<script type="text/javascript">
+  var x = document.lastModified;
+  document.getElementById('lastModified').textContent = x;
+</script>
+
+<body>
+  
+  <div class="mad-lib-header">
+    <h1><span style="color: #000000;">MAD LIBS</span></h1>
+    <p>Get ready to unleash your creativity and create a story that's as wild as a herd of <span style="color: #c50a0a;">dancing flamingos</span> on roller skates!</p>
+  </div>
+
+  <div>
+    <form action="/itc505/lab7" method="post">
+      <label for="noun">Noun:</label>
+      <input type="text" name="noun" required><br>
+  
+      <label for="verb">Verb:</label>
+      <input type="text" name="verb" required><br>
+  
+      <label for="adjective">Adjective:</label>
+      <input type="text" name="adjective" required><br>
+  
+      <label for="adverb">Adverb:</label>
+      <input type="text" name="adverb" required><br>
+  
+      <label for="pluralNoun">Plural Noun:</label>
+      <input type="text" name="pluralNoun" required><br>
+  
+      <input type="submit" value="Generate Mad Lib">
+    </form>
+  </div>
+  <footer>
+    <section>
+      <h3>Addendum</h3>
+      <p>The HTML code defines the structure and content of a webpage.</p>
+      <p>It includes elements such as headings (<code>&lt;h1&gt;</code>), paragraphs (<code>&lt;p&gt;</code>), form inputs (<code>&lt;input&gt;</code>), labels (<code>&lt;label&gt;</code>), and a footer (<code>&lt;footer&gt;</code>).</p>
+      <p>The form is used to collect user input for a Mad Libs game, with fields for a noun, verb, adjective, adverb, and plural noun.</p>
+      <p>JavaScript is used to dynamically update the "Last updated" timestamp in the footer.</p>
+      <p>This JavaScript code is written using Node.js and Express.js, a web application framework for Node.js.</p>
+      <p>sets up a basic Express server that listens for HTTP requests on port 3000.</p>
+      <p>The server serves static files (HTML, CSS, JavaScript) from the current directory using express.static(__dirname).</p>
+      <p><br>It defines two routes:</br><br>GET route (/itc505/lab7) serves the Mad Lib form when the user accesses this URL.</br>
+      <br>POST route (/itc505/lab7) handles form submissions, constructs a Mad Lib story using the submitted data, and sends it back as a response.</br></p>
+      <p>The CSS code defines the styling for the webpage.</p>
+      <p>It sets the font family, background color, layout (using flexbox), and styling for various elements such as the header, form, labels, and input fields.</p>
+      <p>Styles are applied to make the webpage visually appealing and user-friendly, with different colors and spacing.</p>
+      <p>the provided code integrates HTML for structure and content, JavaScript for server-side logic and dynamic updates, and CSS for styling and layout. It creates a functional and visually appealing Mad Libs web application.</p>
+    </section>
+  </footer>
+  
+</body>
+</html>
